@@ -140,8 +140,9 @@ function display(arr){
 }  
 function myFunction(){
     let datas=document.getElementById("ser").value;
+    let str=datas.toLowerCase();
     let newrr=arr.filter((el)=>{
-        if(el.task.includes(datas)||el.priority.includes(datas)||el.date.includes(datas)||el.status.includes(datas)){
+        if(el.task.includes(str)||el.priority.includes(str)||el.date.includes(str)||el.status.includes(str)){
             return el;
         }
     })
@@ -154,16 +155,5 @@ function myFunction(){
    
 
 
-    /*ul.innerHTML+=`<li><div class="l11">${el.task}</div><div class=l12>${el.date}</div></li>
-                   <li><div class="l21">${el.priority}</div><div class="l22">${el.status}</div></li>
-                   <li><div class="l31"><span class="material-symbols-outlined">
-                   delete</span>
-                   </div>
-                   <div class="132">
-                   <span class="material-symbols-outlined">
-                   edit</span>
-                   </div>
-                   </li`;*/
                 
-
 
