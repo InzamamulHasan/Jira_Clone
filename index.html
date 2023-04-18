@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>Zira Clone</h1>
+    <div class="container_data">
+      <button id="add_task_btn" onclick="openModal()">Add Task</button>
+      <div class="search">
+        <input type="text" onkeyup="myFunction()" id="ser"  placeholder="Search by task name, priority, date and status">
+      </div>
+      
+      <div class="data">
+       <div class="items not-started">
+        <h2>Not Started</h2>
+        <br>
+       </div>
+       <div class="items in-progress">
+        <h2>In Progress</h2>
+       </div>
+       <div class="items completed">
+        <h2>Completed</h2>
+       </div>
+      </div>
+    </div>
+   
+    <div class="modal">
+        <div class="modal-content">
+          <div class="close-div">
+            <span class="close">X</span>
+          </div>
+         
+          <form id="add-task-form">
+            <div>
+              <label for="task-name">Task Name:</label>
+              <input type="text" id="task-name" required />
+            </div>
+            <div>
+              <label for="priority">Priority:</label>
+              <select id="priority" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+              </select>
+            </div>
+            <div>
+              <label for="due-date">Due Date:</label>
+              <input type="date" id="due-date" required />
+            </div>
+            <div>
+              <label for="status">Status:</label>
+              <select id="status" required>
+                <option value="not-started">Not Started</option>
+                <option value="in-progress">In Progress</option>
+                <option value="completed">Completed</option>
+              </select>
+            </div>
+            <button id="add-task-innerbtn">Add Task</button>
+          </form>
+        
+        </div>
+      </div>
+      
+    <script src="./script.js"></script>
+</body>
+</html>
