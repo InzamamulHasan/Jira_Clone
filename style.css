@@ -10,7 +10,7 @@ body{
     top:0;
     left: 0;
     z-index: 1000;
-    background-color: rgba(15, 54, 3, 0.3);
+    background-color:rgba(14, 17, 13, 0.9);
     display: none;
     justify-content: center;
     align-items: center;
